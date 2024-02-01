@@ -44,6 +44,8 @@ public class homeFragment extends Fragment {
 
         navController = Navigation.findNavController(view);
 
+        appViewModel = new ViewModelProvider(requireActivity()).get(AppViewModel.class);
+
         view.findViewById(R.id.gotoNewPostFragmentButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
